@@ -22,9 +22,9 @@ body {
     <div class="btn-toolbar" style="position:absolute;top:-2px;right:100px;padding-top:6px" role="toolbar">
 
     <div class="btn-group">
-    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'w') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w'})) :>">1週間</a>
-    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'm') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m'})) :>">1ヶ月</a>
-    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'y') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y'})) :>">1年</a>
+    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'w') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w'})) :>">1 weel</a>
+    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'm') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m'})) :>">1 month</a>
+    <a class="btn btn-default btn-sm <: ($valid.valid('t') == 'y') ? 'active' : '' :>" href="<: $c.req.uri_for('/ifr/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y'})) :>">1 year</a>
     </div>
 
     <div class="btn-group">
@@ -32,14 +32,14 @@ body {
     <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
     <ul class="dropdown-menu">
     <li class="dropdown-header">CSV</li>
-    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1週間</a></li>
-    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1ヶ月</a></li>
-    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1年</a></li>
+    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1 weel</a></li>
+    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1 month</a></li>
+    <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1 year</a></li>
     <li class="divider"></li>
     <li class="dropdown-header">HTML</li>
-    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>" target="_blank">1週間</a></li>
-    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>" target="_blank">1ヶ月</a></li>
-    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>" target="_blank">1年</a></li>
+    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>" target="_blank">1 weel</a></li>
+    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>" target="_blank">1 month</a></li>
+    <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>" target="_blank">1 year</a></li>
     </ul>
     </div><!-- /btn-group -->
 

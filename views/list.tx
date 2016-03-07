@@ -10,9 +10,9 @@
 : my $path_info = $c.req.path_info;
 
 <ul class="pagination pagination-sm pull-right" style="margin: 10px 0px;">
-<li class="<: ($valid.valid('t') == 'w') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'w'})) :>">1週間</a></li>
-<li class="<: ($valid.valid('t') == 'm') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'m'})) :>">1ヶ月</a></li>
-<li class="<: ($valid.valid('t') == 'y') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'y'})) :>">1年</a></li>
+<li class="<: ($valid.valid('t') == 'w') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'w'})) :>">1 week</a></li>
+<li class="<: ($valid.valid('t') == 'm') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'m'})) :>">1 month</a></li>
+<li class="<: ($valid.valid('t') == 'y') ? 'active' : '' :>"><a href="<: $c.req.uri_for($path_info, $merge_params({t=>'y'})) :>">1 year</a></li>
 </ul>
 
 <div class="col-xs-2 pull-right" style="margin: 10px 0px;">

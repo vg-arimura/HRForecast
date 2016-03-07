@@ -10,10 +10,10 @@ use Data::Dumper;
 
 use constant CALCULATIONS => [
   {function=>'',                      name=>'———',           minus_days_of_from =>  0},
-  {function=>'runningtotal',          name=>'累計',             minus_days_of_from =>  0},
-  {function=>'runningtotal_by_month', name=>'累計（月別）',     minus_days_of_from => 31},
-  {function=>'difference',            name=>'差分',             minus_days_of_from =>  1},
-  {function=>'difference_plus',       name=>'差分（増加のみ）', minus_days_of_from =>  1},
+  {function=>'runningtotal',          name=>'accumulated',             minus_days_of_from =>  0},
+  {function=>'runningtotal_by_month', name=>'accumulated(month)',     minus_days_of_from => 31},
+  {function=>'difference',            name=>'difference',             minus_days_of_from =>  1},
+  {function=>'difference_plus',       name=>'difference(increasing only)', minus_days_of_from =>  1},
 ];
 
 sub new {
