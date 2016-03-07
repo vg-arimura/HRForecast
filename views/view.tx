@@ -11,14 +11,14 @@
         <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
          <li class="dropdown-header">CSV</li>
-         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1週間</a></li>
-         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1ヶ月</a></li>
-         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1年</a></li>
+         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1 week</a></li>
+         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1 month</a></li>
+         <li><a href="<: $c.req.uri_for('/csv/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1 year</a></li>
          <li class="divider"></li>
          <li class="dropdown-header">HTML</li>
-         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1週間</a></li>
-         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1ヶ月</a></li>
-         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1年</a></li>
+         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'w',d=>1})) :>">1 week</a></li>
+         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'m',d=>1})) :>">1 month</a></li>
+         <li><a href="<: $c.req.uri_for('/table/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name,$merge_params({t=>'y',d=>1})) :>">1 year</a></li>
         </ul>
       </div><!-- /btn-group -->
 
@@ -27,7 +27,7 @@
       </div>
 
       <div class="btn-group">
-        <a class="btn btn-default btn-sm" href="<: $c.req.uri_for('/edit/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name) :>">設定</a>
+        <a class="btn btn-default btn-sm" href="<: $c.req.uri_for('/edit/'~$metrics.service_name~'/'~$metrics.section_name~'/'~$metrics.graph_name) :>">Setting</a>
       </div>
 
     </div>
